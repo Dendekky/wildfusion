@@ -1,3 +1,4 @@
+html,
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +11,121 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+$button-color: #20c997;
+$left-space: 3.6%;
+
+.bold-nav {
+  color: #000000;
+  margin-right: 44px;
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: $button-color;
+    }
+  }
+}
+.custom-button {
+  background-color: $button-color;
+  color: #ffffff;
+  font-weight: bold;
+  min-width: 10.5625rem;
+  padding: 0.84375rem 1.5625rem;
+  text-align: center;
+  // -webkit-transition: all .6s ease !important;
+  // transition: all .6s ease !important;
+  border: none;
+  border-radius: 4px;
+}
+.custom-link {
+  text-decoration: underline;
+  color: $button-color;
+  font-weight: bold;
+  margin: 0 4px 0 4px;
+  &:hover {
+    color: #000000
+  }
+}
+.section-header {
+  font-size: 18px;
+  font-weight: bold;
+  color: $button-color;
+  text-transform: uppercase;
+}
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+.homepage {
+  overflow-x: hidden;
+  // height: 3000px;
+  // max-width: 100%;
+  .header {
+    position: absolute;
+    top: 0px;
+    // max-width:100%;
+    z-index: 9;
+  }
+  .hero-section {
+    position: relative;
+    // top: 0px;
+    z-index: 8;
+    // margin: 0 0 -100px 3.6%;
+    margin-left: $left-space;
+    .intro {
+      margin-top: 100px;
+      h2 {
+      font-weight: bolder;
+      font-size: 60px;
+      }
+      span, p {
+        // font-weight: bold;
+        font-size: 18px;
+        padding: 16px 0 16px 0;
+      }
+    }
+    // .hero-bg {
+    //   background-image: url("./assets/images/wildfusion_hero_1.png");
+    //   height: 100%;
+    //   // max-width:100%;
+    //   // background-position: center;
+    //   // background-repeat: no-repeat;
+    //   background-size: cover;
+    // }
+    img {
+      max-width:100%;
+    }
+  }
+
+  .partner-section {
+    background: #e7f1ea;
+    // z-index: 6;
+    margin: -245px 0 0 0;
+    // background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    .partner-logos {
+      margin: 230px 0 20px $left-space;
+      img {
+        margin: 16pt 16pt 16pt 0;
+      }
+    }
+  }
+
+  .skill-cards-section {
+    background: #e7f1ea;
+    .skill-cards {
+      padding-left: $left-space;
+      h2, img {
+        margin-left: 20px;
+        padding-top: 8px;
+      }
+      .card {
+        margin: 0 0 8px 0;
+        // border-radius: 2%;
+        // box-shadow: 2px 2px 2px #e4e1e1;
+      }
+    }
+  }
 }
