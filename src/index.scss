@@ -116,17 +116,26 @@ $left-space: 3.6%;
   .skill-cards-section {
     background: #e7f1ea;
     .skill-cards {
-      padding-left: $left-space;
-      padding-right: $left-space;
+      // padding-left: $left-space;
+      // padding-right: $left-space;
       h2, img {
         margin-left: 20px;
         padding-top: 8px;
       }
       .card {
         margin: 0 0 8px 0;
+        // padding-left: $left-space;
+        // padding-right: $left-space;
         // border-radius: 2%;
         // box-shadow: 2px 2px 2px #e4e1e1;
       }
+    }
+  }
+
+  .features {
+    background: #e7f1ea;
+    img {
+      max-width: 100%;
     }
   }
 }

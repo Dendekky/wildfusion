@@ -11,15 +11,20 @@ import {
   Card,
   CardTitle,
   CardBody,
- } from "reactstrap";
-import hero1 from "./assets/images/wildfusion_hero_1_2.png"
-import leaware from "./assets/images/img__hero-logo-leaware.png"
-import mvp from "./assets/images/img__hero-logo-mvp.png"
-import tonik from "./assets/images/img__hero-logo-tonik.png"
-import kato from "./assets/images/img__hero-logo-kato.png"
-import brighter from "./assets/images/img__hero-logo-brighter.png"
-import heynink from "./assets/images/img__hero-logo-heynink.png"
-import frischluft from "./assets/images/img__hero-logo-frischluft.png"
+} from "reactstrap";
+ import {
+  hero1,
+  leaware,
+  mvp,
+  tonik,
+  kato,
+  brighter,
+  heynink,
+  frischluft,
+  neovision,
+  neoventure,
+  neoboost
+} from "./components/images"
 import {
   Headerlogo,
   Culture,
@@ -128,8 +133,8 @@ function App() {
             </Row>
           </Col>
         </Row>
-        <Row className="skill-cards-section">
-          <Col md="6" lg="6" className="skill-cards">
+        <Row className="skill-cards-section py-5">
+          <Col md="6" lg="6" className="skill-cards pl-5 pr-5 pr-md-3">
             <Row>
               <Col md="6" lg="6">
                 <Card className="card">
@@ -146,7 +151,7 @@ function App() {
               <Col md="6" lg="6">
                 <Card className="card">
                   <CardTitle>
-                    <img src={Speed} alt="foundation-logo" />
+                    <img src={Speed} alt="speed-logo" />
                     <h2 className="font-weight-bold">Speed & Agility</h2>
                   </CardTitle>
                   <CardBody>
@@ -160,7 +165,7 @@ function App() {
               <Col md="6" lg="6">
                 <Card className="card">
                   <CardTitle>
-                    <img src={Innovation} alt="foundation-logo" />
+                    <img src={Innovation} alt="innovation-logo" />
                     <h2 className="font-weight-bold">Technology Innovation</h2>
                   </CardTitle>
                   <CardBody>
@@ -172,7 +177,7 @@ function App() {
               <Col md="6" lg="6">
                 <Card className="card">
                   <CardTitle>
-                    <img src={Culture} alt="foundation-logo" />
+                    <img src={Culture} alt="culture-logo" />
                     <h2 className="font-weight-bold">Culture & Skill Shift</h2>
                   </CardTitle>
                   <CardBody>
@@ -183,16 +188,16 @@ function App() {
               </Col>
             </Row>
           </Col>
-          <Col md="6" lg="6" className="skill-cards">
+          <Col md="6" lg="6" className="skill-cards pr-5 pl-5 pl-md-3">
             <Row>
               <Col
                 sm={{ size: 8, offset: 2 }}
                 md={{ size: 8, offset: 2 }}
                 lg={{ size: 8, offset: 2 }}
-                className="mb-5">
+                className="d-none d-md-inline d-lg-inline mb-5 pb-5">
                 <SectionHeader>Understand Opportunity</SectionHeader>
                 <SectionTitle>Recognize your goals</SectionTitle>
-                <span>
+                <span className="font-weight-bold">
                   Technology provides new opportunities. 
                   To leverage them, you need to understand your company's technology needs
                 </span>
@@ -204,8 +209,8 @@ function App() {
                   <Col md="12" lg="12">
                     <Card className="card">
                       <CardTitle>
-                        <img src={Innovation} alt="foundation-logo" />
-                        <h2 className="font-weight-bold">Technology Innovation</h2>
+                        <img src={ElasticScaling} alt="elastic-scaling-logo" />
+                        <h2 className="font-weight-bold">Elastic Scaling</h2>
                       </CardTitle>
                       <CardBody>
                       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
@@ -216,8 +221,8 @@ function App() {
                   <Col md="12" lg="12">
                     <Card className="card">
                       <CardTitle>
-                        <img src={Culture} alt="foundation-logo" />
-                        <h2 className="font-weight-bold">Culture & Skill Shift</h2>
+                        <img src={Efficiencies} alt="efficiency-logo" />
+                        <h2 className="font-weight-bold">Smart Efficiencies</h2>
                       </CardTitle>
                       <CardBody>
                       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
@@ -230,8 +235,8 @@ function App() {
               <Col md="6" lg="6" className="mt-0 mt-md-5 mt-lg-5 pt-0 pt-md-5 pt-lg-5">
                 <Card className="card">
                   <CardTitle>
-                    <img src={Culture} alt="foundation-logo" />
-                    <h2 className="font-weight-bold">Culture & Skill Shift</h2>
+                    <img src={Transformation} alt="transformation-logo" />
+                    <h2 className="font-weight-bold">Transformation Acceleration</h2>
                   </CardTitle>
                   <CardBody>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
@@ -242,6 +247,57 @@ function App() {
             </Row>
           </Col>
         </Row>
+        <div className="features py-5">
+          <div className="text-center pb-5">
+            <SectionHeader>Our Solutions</SectionHeader>
+            <SectionTitle>We help seizing technology opportunities</SectionTitle>
+            <span className="font-weight-bold">Our technologies services are designed to build the capabilities required <br /> to seize your distinct technology opportunities</span>
+          </div>
+          <Col>
+            <Row>
+              <Col md="5" lg="5">
+                <img src={neovision} alt="neovision-logo" />
+              </Col>
+              <Col md="7" lg="7" className="px-2 pr-5">
+                <SectionTitle>neoVision</SectionTitle>
+                <h3>Design and  accelerate future-ready technologies strategies</h3>
+                <span>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                  eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                </span>
+                <hr />
+              </Col>
+            </Row>
+            <Row>
+              <Col md="5" lg="5">
+                <img src={neoventure} alt="neoventure-logo" />
+              </Col>
+              <Col md="7" lg="7" className="px-2 pr-5">
+                <SectionTitle>neoVenture</SectionTitle>
+                <h3>Design and  accelerate future-ready technologies strategies</h3>
+                <span>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                  eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                </span>
+                <hr />
+              </Col>
+            </Row>
+            <Row>
+              <Col md="5" lg="5">
+                <img src={neoboost} alt="neoboost-logo" />
+              </Col>
+              <Col md="7" lg="7" className="px-2 pr-5">
+                <SectionTitle>neoboost</SectionTitle>
+                <h3>Design and  accelerate future-ready technologies strategies</h3>
+                <span>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                  eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                </span>
+                <hr />
+              </Col>
+            </Row>
+          </Col>
+        </div>
     </div>
   );
 }
