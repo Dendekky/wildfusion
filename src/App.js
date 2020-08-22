@@ -189,9 +189,55 @@ function App() {
                 sm={{ size: 8, offset: 2 }}
                 md={{ size: 8, offset: 2 }}
                 lg={{ size: 8, offset: 2 }}
-                className="">
+                className="mb-5">
                 <SectionHeader>Understand Opportunity</SectionHeader>
                 <SectionTitle>Recognize your goals</SectionTitle>
+                <span>
+                  Technology provides new opportunities. 
+                  To leverage them, you need to understand your company's technology needs
+                </span>
+              </Col>
+            </Row>
+            <Row>
+              <Col md="6" lg="6">
+                <Row>
+                  <Col md="12" lg="12">
+                    <Card className="card">
+                      <CardTitle>
+                        <img src={Innovation} alt="foundation-logo" />
+                        <h2 className="font-weight-bold">Technology Innovation</h2>
+                      </CardTitle>
+                      <CardBody>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                      </CardBody>
+                    </Card>
+                  </Col>
+                  <Col md="12" lg="12">
+                    <Card className="card">
+                      <CardTitle>
+                        <img src={Culture} alt="foundation-logo" />
+                        <h2 className="font-weight-bold">Culture & Skill Shift</h2>
+                      </CardTitle>
+                      <CardBody>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                      </CardBody>
+                    </Card>
+                  </Col>
+                </Row>
+              </Col>
+              <Col md="6" lg="6" className="mt-0 mt-md-5 mt-lg-5 pt-0 pt-md-5 pt-lg-5">
+                <Card className="card">
+                  <CardTitle>
+                    <img src={Culture} alt="foundation-logo" />
+                    <h2 className="font-weight-bold">Culture & Skill Shift</h2>
+                  </CardTitle>
+                  <CardBody>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                  eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                  </CardBody>
+                </Card>
               </Col>
             </Row>
           </Col>
