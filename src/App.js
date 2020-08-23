@@ -33,7 +33,20 @@ import {
   Foundation,
   Innovation,
   Speed,
-  Transformation
+  Transformation,
+  Readiness,
+  Strategy,
+  Acceleration,
+  SmartEfficiencies,
+  InnovationScouting,
+  VentureScaling,
+  MVP,
+  InnovationUnits,
+  OperationsAssessment,
+  AgileCoaching,
+  OperatingModelDesign,
+  ScalablePartnerEcosystem,
+  DevopsTransformation,
 } from "./components/logos"
 
 const BoldNavText = ({ text, link }) => (
@@ -254,7 +267,7 @@ function App() {
             <span className="font-weight-bold">Our technologies services are designed to build the capabilities required <br /> to seize your distinct technology opportunities</span>
           </div>
           <Col>
-            <Row>
+            <Row className="feature-detail">
               <Col md="5" lg="5">
                 <img src={neovision} alt="neovision-logo" />
               </Col>
@@ -265,34 +278,115 @@ function App() {
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
                   eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                 </span>
+                <Row className="mt-5">
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={Readiness} alt="readiness-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">Technology Readiness</h5>
+                  </Col>
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={Strategy} alt="strategy-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">Technology Stratey</h5>
+                  </Col>
+                </Row>
+                <Row className="mt-5">
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={Acceleration} alt="readiness-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">Technology Acceleration</h5>
+                  </Col>
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={SmartEfficiencies } alt="strategy-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">Smart Efficiencies</h5>
+                  </Col>
+                </Row>
+                <div className="my-5">
+                  <CustomButton>Send a request</CustomButton>
+                  <span className="mx-4">or</span>
+                  <CustomLink link="#" text="Learn More" />
+                </div>
                 <hr />
               </Col>
             </Row>
-            <Row>
+            <Row className="feature-detail">
               <Col md="5" lg="5">
                 <img src={neoventure} alt="neoventure-logo" />
               </Col>
               <Col md="7" lg="7" className="px-2 pr-5">
                 <SectionTitle>neoVenture</SectionTitle>
-                <h3>Design and  accelerate future-ready technologies strategies</h3>
+                <h3>Design, build and scale technology innovation</h3>
                 <span>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
                   eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                 </span>
+                <Row className="mt-5">
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={InnovationScouting} alt="Innovation-Scouting-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">Innovation Scouting</h5>
+                  </Col>
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={VentureScaling} alt="Venture=Scaling-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">Venture Scaling</h5>
+                  </Col>
+                </Row>
+                <Row className="mt-5">
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={MVP} alt="mvp-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">MVP & Product Building</h5>
+                  </Col>
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={InnovationUnits } alt="Innovation-Units-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">Innovation Units</h5>
+                  </Col>
+                </Row>
+                <div className="my-5">
+                  <CustomButton>Send a request</CustomButton>
+                  <span className="mx-4">or</span>
+                  <CustomLink link="#" text="Learn More" />
+                </div>
                 <hr />
               </Col>
             </Row>
-            <Row>
+            <Row className="feature-detail">
               <Col md="5" lg="5">
                 <img src={neoboost} alt="neoboost-logo" />
               </Col>
               <Col md="7" lg="7" className="px-2 pr-5">
                 <SectionTitle>neoboost</SectionTitle>
-                <h3>Design and  accelerate future-ready technologies strategies</h3>
+                <h3>Boost technology operation for agile scalability</h3>
                 <span>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
                   eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                 </span>
+                <Row className="mt-5">
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={OperationsAssessment} alt="OperationsAssessment-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">Operations Assessment</h5>
+                  </Col>
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={AgileCoaching} alt="Agile-Coaching-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">Agile Coaching</h5>
+                  </Col>
+                </Row>
+                <Row className="mt-5">
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={OperatingModelDesign} alt="OperatingModelDesign-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">Operating Model Design</h5>
+                  </Col>
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={ScalablePartnerEcosystem } alt="ScalablePartnerEcosystem-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">Scalable Partner Ecosystem</h5>
+                  </Col>
+                  </Row>
+                  <Row className="mt-5">
+                  <Col sm="6" md-6 lg="6" className="d-flex">
+                    <img src={DevopsTransformation } alt="DevopsTransformation-logo" />
+                    <h5 className="align-self-center ml-4 font-weight-bold">Devops Transformation</h5>
+                  </Col>
+                </Row>
+                <div className="my-5">
+                  <CustomButton>Send a request</CustomButton>
+                  <span className="mx-4">or</span>
+                  <CustomLink link="#" text="Learn More" />
+                </div>
                 <hr />
               </Col>
             </Row>

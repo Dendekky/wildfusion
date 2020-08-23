@@ -134,6 +134,9 @@ $left-space: 3.6%;
 
   .features {
     background: #e7f1ea;
+    .feature-detail {
+      margin: 24px 0;
+    }
     img {
       max-width: 100%;
     }
