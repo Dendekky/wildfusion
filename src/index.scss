@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-$button-color: #20c997;
+$button-color: #3bdfab;
 $left-space: 3.6%;
 
 .bold-nav {
@@ -136,6 +136,7 @@ $left-space: 3.6%;
     background: linear-gradient(215deg, #f2f2f2 50%, #e7f1ea 50%);
     .content-text {
       padding: 160px ($left-space * 2) 0 $left-space;
+      padding-left: $left-space;
     }
   }
 

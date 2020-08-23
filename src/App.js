@@ -89,7 +89,7 @@ function App() {
     <div className="homepage">
       <Row>
         <Col className="header">
-        <Navbar light expand="lg" className="ml-5 mr-0 mr-lg-0 mr-md-5 mr-sm-5">
+        <Navbar light expand="lg" className="ml-0 ml-md-5 mr-0 mr-lg-0 mr-md-5 mr-sm-5">
           <NavbarBrand href="#">
             <img src={Headerlogo} alt="logo" />
           </NavbarBrand>
@@ -97,7 +97,7 @@ function App() {
           <NavbarToggler onClick={toggle}>{isOpen ? (
             <img style={{ height: "30px" }} src="https://img.icons8.com/ios/50/000000/xbox-x.png" alt="X-icon" />
             ) : (
-            <img style={{ height: "30px" }} src="https://img.icons8.com/material-two-tone/24/000000/menu.png" alt="hamburger-icon"/>
+            <img style={{ height: "30px" }} src="https://img.icons8.com/material-two-tone/24/000000/menu.png" alt="hamburger"/>
             )}
           </NavbarToggler>
           <Collapse isOpen={isOpen} navbar>
@@ -292,7 +292,7 @@ function App() {
                   eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                 </span>
                 <Row className="mt-5">
-                  <Col sm="6" md="6" lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex mb-5 mb-md-0">
                     <img src={Readiness} alt="readiness-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Technology Readiness</h5>
                   </Col>
@@ -302,7 +302,7 @@ function App() {
                   </Col>
                 </Row>
                 <Row className="mt-5">
-                  <Col sm="6" md="6" lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex mb-5 mb-md-0">
                     <img src={Acceleration} alt="readiness-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Technology Acceleration</h5>
                   </Col>
@@ -331,7 +331,7 @@ function App() {
                   eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                 </span>
                 <Row className="mt-5">
-                  <Col sm="6" md="6" lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex mb-5 mb-md-0">
                     <img src={InnovationScouting} alt="Innovation-Scouting-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Innovation Scouting</h5>
                   </Col>
@@ -341,7 +341,7 @@ function App() {
                   </Col>
                 </Row>
                 <Row className="mt-5">
-                  <Col sm="6" md="6" lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex mb-5 mb-md-0">
                     <img src={MVP} alt="mvp-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">MVP & Product Building</h5>
                   </Col>
@@ -370,7 +370,7 @@ function App() {
                   eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                 </span>
                 <Row className="mt-5">
-                  <Col sm="6" md="6" lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex mb-5 mb-md-0">
                     <img src={OperationsAssessment} alt="OperationsAssessment-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Operations Assessment</h5>
                   </Col>
@@ -380,7 +380,7 @@ function App() {
                   </Col>
                 </Row>
                 <Row className="mt-5">
-                  <Col sm="6" md="6" lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex mb-5 mb-md-0">
                     <img src={OperatingModelDesign} alt="OperatingModelDesign-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Operating Model Design</h5>
                   </Col>
@@ -472,8 +472,14 @@ function App() {
                 <SectionHeader>Contact</SectionHeader>
                 <h4 style={{ color: "#f2f2f2", fontWeight: "bold", fontSize: "36px" }}>Take advantage of expert knowledge</h4>
                 <p style={{ color: "#efefef", padding: "4px 0 4px 0" }}>Feel free to get in touch with us via email or phone</p>
-                <CustomLink link="#" text="info@neonerv.com" />
-                <CustomLink link="#" text="+49 (0) 30/20 60 86 21" />
+                <Row>
+                  <Col md="6" lg="4">
+                    <CustomLink link="#" text="info@neonerv.com" />
+                  </Col>
+                  <Col md="6" lg="4">
+                    <CustomLink link="#" text="+49 (0) 30/20 60 86 21" />
+                  </Col>
+                </Row>
               </Col>
               <Col md="4" lg="4" className="py-5">
                 <CustomButton>Let's talk</CustomButton>
@@ -493,7 +499,7 @@ function App() {
                   <p style={{ color: "#efefef", padding: "12px 0 12px 0" }}>Copyright &copy; 2019 neonerv</p>
                 </Row>
               </Col>
-              <Col sm="4" md="2" lg="2" className="px-2 px-md-5">
+              <Col sm="4" md="2" lg="2" className="px-0 px-md-5">
                 <h6 style={{ color: "#8d8d8d", fontWeight: "bold", paddingBottom: "8px" }}>PRODUCT</h6>
                 <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>neoVision</p>
                 <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>neoVenture</p>
@@ -511,7 +517,7 @@ function App() {
                <InputGroup>
                   <Input placeholder="Enter your email address" />
                   <InputGroupAddon addonType="append">
-                    <InputGroupText style={{ cursor: "pointer"}} className="submit-button" />
+                    <InputGroupText style={{ cursor: "pointer"}} className="submit-button mr-2" />
                   </InputGroupAddon>
                 </InputGroup>
               </Col>
