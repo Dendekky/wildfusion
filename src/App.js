@@ -16,7 +16,8 @@ import {
   InputGroupText,
   Input,
 } from "reactstrap";
- import {
+import { HashLink as Link } from 'react-router-hash-link';
+import {
   hero1,
   leaware,
   mvp,
@@ -58,9 +59,9 @@ import {
 
 const BoldNavText = ({ text, link }) => (
 <NavItem className="font-weight-bold bold-nav">
-  <a href={link}>
+  <Link smooth to={link} className="navlink"activeClassName="selected">
     {text}
-  </a>
+  </Link>
 </NavItem>
 )
 
@@ -101,12 +102,12 @@ function App() {
           </NavbarToggler>
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <BoldNavText link="#" text="neoVision" />
-              <BoldNavText link="#" text="neoVenture" />
-              <BoldNavText link="#" text="neoBoost" />
+              <BoldNavText link="#neovision" text="neoVision" />
+              <BoldNavText link="#neoventure" text="neoVenture" />
+              <BoldNavText link="#neoboost" text="neoBoost" />
             </Nav>
             <Nav className="ml-auto" navbar>
-              <BoldNavText link="/" text="About Us" />
+              <BoldNavText link="#about" text="About Us" />
             </Nav>
             <Nav className="mr-auto" navbar>
               <CustomButton>Get in touch</CustomButton>
@@ -279,7 +280,7 @@ function App() {
             <span className="font-weight-bold">Our technologies services are designed to build the capabilities required <br /> to seize your distinct technology opportunities</span>
           </div>
           <Col>
-            <Row className="feature-detail">
+            <Row id="neovision" className="feature-detail">
               <Col md="5" lg="5">
                 <img src={neovision} alt="neovision-logo" />
               </Col>
@@ -318,7 +319,7 @@ function App() {
                 <hr />
               </Col>
             </Row>
-            <Row className="feature-detail">
+            <Row id="neoventure" className="feature-detail">
               <Col md="5" lg="5">
                 <img src={neoventure} alt="neoventure-logo" />
               </Col>
@@ -357,7 +358,7 @@ function App() {
                 <hr />
               </Col>
             </Row>
-            <Row className="feature-detail">
+            <Row id="neoboost" className="feature-detail">
               <Col md="5" lg="5">
                 <img src={neoboost} alt="neoboost-logo" />
               </Col>
@@ -433,7 +434,7 @@ function App() {
               </Row>
             </Col>
           </Row>
-          <Row className="about-section mt-5 py-5">
+          <Row id="about" className="about-section mt-5 py-5">
             <Col sm="12" md="12" lg="12">
               <SectionHeader>About Us</SectionHeader>
               <SectionTitle>We build technology capabilities</SectionTitle>
@@ -465,7 +466,7 @@ function App() {
               </div>
             </Col>
           </Row>
-          <Col className="contact-section py-5">
+          <Col id="contact" className="contact-section py-5">
             <Row className="contact-info py-4">
               <Col md="8" lg="8">
                 <SectionHeader>Contact</SectionHeader>
