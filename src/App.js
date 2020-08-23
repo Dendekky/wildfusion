@@ -93,7 +93,12 @@ function App() {
             <img src={Headerlogo} alt="logo" />
           </NavbarBrand>
           {/* TODO: Change hamburger to X svg on collapse open */}
-          <NavbarToggler onClick={toggle} />
+          <NavbarToggler onClick={toggle}>{isOpen ? (
+            <img style={{ height: "30px" }} src="https://img.icons8.com/ios/50/000000/xbox-x.png" alt="X-icon" />
+            ) : (
+            <img style={{ height: "30px" }} src="https://img.icons8.com/material-two-tone/24/000000/menu.png" alt="hamburger-icon"/>
+            )}
+          </NavbarToggler>
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <BoldNavText link="#" text="neoVision" />
@@ -475,7 +480,7 @@ function App() {
             </Row>
             <hr />
             <Row className="footer-section py-5">
-              <Col md="4" lg="4">
+              <Col sm="4" md="4" lg="4" className="pr-5">
                 <Row>
                   <img src={Headerlogo} alt="header" />
                 </Row>
@@ -487,19 +492,19 @@ function App() {
                   <p style={{ color: "#efefef", padding: "12px 0 12px 0" }}>Copyright &copy; 2019 neonerv</p>
                 </Row>
               </Col>
-              <Col md="2" lg="2" className="px-0 px-md-5">
+              <Col sm="4" md="2" lg="2" className="px-2 px-md-5">
                 <h6 style={{ color: "#8d8d8d", fontWeight: "bold", paddingBottom: "8px" }}>PRODUCT</h6>
                 <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>neoVision</p>
                 <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>neoVenture</p>
                 <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>neoBoost</p>
               </Col>
-              <Col md="2" lg="2">
+              <Col sm="4" md="2" lg="2" className="px-0 px-md-5">
                 <h6 style={{ color: "#8d8d8d", fontWeight: "bold", paddingBottom: "8px"  }}>COMPANY</h6>
                 <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>About us</p>
                 <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>Privacy Policy</p>
                 <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>Terms of use</p>
               </Col>
-              <Col md="4" lg="4">
+              <Col md="4" lg="4" className="px-0 px-md-5">
                <h6 style={{ color: "#8d8d8d", fontWeight: "bold", paddingBottom: "8px"  }}>WANT TO KNOW MORE</h6>
                <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>Get Monthly Updates and sign up for the newsletter</p>
                <InputGroup>

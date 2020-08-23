@@ -56,6 +56,20 @@ $left-space: 3.6%;
   font-size: 36px;
   font-weight: bold;
 }
+@media screen and (max-width: 980px) {
+  body {
+    .homepage {
+      .header{
+        position: relative;
+      }
+      .hero-section {
+        .intro {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
 .homepage {
   overflow-x: hidden;
   .header {
