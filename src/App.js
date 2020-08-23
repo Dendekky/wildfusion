@@ -23,7 +23,8 @@ import {
   frischluft,
   neovision,
   neoventure,
-  neoboost
+  neoboost,
+  consumergoods
 } from "./components/images"
 import {
   Headerlogo,
@@ -47,6 +48,8 @@ import {
   OperatingModelDesign,
   ScalablePartnerEcosystem,
   DevopsTransformation,
+  Linkedinlogo,
+  Xinglogo
 } from "./components/logos"
 
 const BoldNavText = ({ text, link }) => (
@@ -260,7 +263,7 @@ function App() {
             </Row>
           </Col>
         </Row>
-        <div className="features py-5">
+        <div className="features pt-5">
           <div className="text-center pb-5">
             <SectionHeader>Our Solutions</SectionHeader>
             <SectionTitle>We help seizing technology opportunities</SectionTitle>
@@ -279,21 +282,21 @@ function App() {
                   eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                 </span>
                 <Row className="mt-5">
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={Readiness} alt="readiness-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Technology Readiness</h5>
                   </Col>
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={Strategy} alt="strategy-logo" />
-                    <h5 className="align-self-center ml-4 font-weight-bold">Technology Stratey</h5>
+                    <h5 className="align-self-center ml-4 font-weight-bold">Technology Strategy</h5>
                   </Col>
                 </Row>
                 <Row className="mt-5">
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={Acceleration} alt="readiness-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Technology Acceleration</h5>
                   </Col>
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={SmartEfficiencies } alt="strategy-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Smart Efficiencies</h5>
                   </Col>
@@ -318,21 +321,21 @@ function App() {
                   eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                 </span>
                 <Row className="mt-5">
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={InnovationScouting} alt="Innovation-Scouting-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Innovation Scouting</h5>
                   </Col>
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={VentureScaling} alt="Venture=Scaling-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Venture Scaling</h5>
                   </Col>
                 </Row>
                 <Row className="mt-5">
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={MVP} alt="mvp-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">MVP & Product Building</h5>
                   </Col>
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={InnovationUnits } alt="Innovation-Units-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Innovation Units</h5>
                   </Col>
@@ -357,27 +360,27 @@ function App() {
                   eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                 </span>
                 <Row className="mt-5">
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={OperationsAssessment} alt="OperationsAssessment-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Operations Assessment</h5>
                   </Col>
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={AgileCoaching} alt="Agile-Coaching-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Agile Coaching</h5>
                   </Col>
                 </Row>
                 <Row className="mt-5">
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={OperatingModelDesign} alt="OperatingModelDesign-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Operating Model Design</h5>
                   </Col>
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={ScalablePartnerEcosystem } alt="ScalablePartnerEcosystem-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Scalable Partner Ecosystem</h5>
                   </Col>
                   </Row>
                   <Row className="mt-5">
-                  <Col sm="6" md-6 lg="6" className="d-flex">
+                  <Col sm="6" md="6" lg="6" className="d-flex">
                     <img src={DevopsTransformation } alt="DevopsTransformation-logo" />
                     <h5 className="align-self-center ml-4 font-weight-bold">Devops Transformation</h5>
                   </Col>
@@ -388,6 +391,113 @@ function App() {
                   <CustomLink link="#" text="Learn More" />
                 </div>
                 <hr />
+              </Col>
+            </Row>
+          </Col>
+          <Row className="case-study">
+            <Col md="6" lg="6" className="content-image">
+              <img src={consumergoods} alt="consumer-goods" />
+            </Col>
+            <Col md="6" lg="6" className="content-text">
+              <SectionHeader>Cases</SectionHeader>
+              <SectionTitle>Consumer Goods</SectionTitle>
+              <h4 className="my-5">
+                Setup of a new technology operating model for Global ConsumerGoods Company in order
+                to stregthen availability of critical resources for client's digital ambition.
+              </h4>
+              <Row className="my-5 py-5 font-weight-bold">
+                <Col sm="4" md="4" lg="4">
+                  <hr style={{ border: "2px solid #20c997", width: "70%", margin: 0 }} />
+                  <h1 className="font-weight-bolder">5</h1>
+                  <p>digital competence centers established</p>
+                </Col>
+                <Col sm="4" md="4" lg="4">
+                  <hr style={{ border: "2px solid #20c997", width: "70%", margin: 0 }} />
+                  <h1 className="font-weight-bolder">28</h1>
+                  <p>mEUR innovation budgets released</p>
+                </Col>
+                <Col sm="4" md="4" lg="4">
+                  <hr style={{ border: "2px solid #20c997", width: "70%", margin: 0 }} />
+                  <h1 className="font-weight-bolder">10%</h1>
+                  <p>more new IT resources</p>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+          <Row className="about-section mt-5 py-5">
+            <Col sm="12" md="12" lg="12">
+              <SectionHeader>About Us</SectionHeader>
+              <SectionTitle>We build technology capabilities</SectionTitle>
+            </Col>
+            <Col md="6" lg="6">
+              <h4 className="my-4">
+                Our mission is to enable our clients to take full benefit of their technology potential for fast
+                innovation, efficient business growth, and intelligent automation.
+              </h4>
+              <p className="mb-4">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+                <CustomLink link="#" text="Learn more" />
+            </Col>
+            <Col md="6" lg="6">
+              <h3 className="my-4 font-weight-bold mx-0 mx-md-5 px-0 px-md-5">See who we are</h3>
+              <div className="d-flex my-4 mx-0 mx-md-5 px-0 px-md-5">
+                <img src={Linkedinlogo} alt="linkedin" />
+                <h5 className="ml-4">Linkedin</h5>
+              </div>
+              <div className="d-flex my-4 mx-0 mx-md-5 px-0 px-md-5">
+                <img src={Xinglogo} alt="Xinglogo" />
+                <h5 className="ml-4">Xing</h5>
+              </div>
+            </Col>
+          </Row>
+          <Col className="contact-section py-5">
+            <Row className="contact-info py-4">
+              <Col md="8" lg="8">
+                <SectionHeader>Contact</SectionHeader>
+                <h4 style={{ color: "#f2f2f2", fontWeight: "bold", fontSize: "36px" }}>Take advantage of expert knowledge</h4>
+                <p style={{ color: "#efefef", padding: "4px 0 4px 0" }}>Feel free to get in touch with us via email or phone</p>
+                <CustomLink link="#" text="info@neonerv.com" />
+                <CustomLink link="#" text="+49 (0) 30/20 60 86 21" />
+              </Col>
+              <Col md="4" lg="4" className="py-5">
+                <CustomButton>Let's talk</CustomButton>
+              </Col>
+            </Row>
+            <hr />
+            <Row className="footer-section py-5">
+              <Col md="4" lg="4">
+                <Row>
+                  <img src={Headerlogo} alt="header" />
+                </Row>
+                <Row className="contact-logos">
+                  <img src={Linkedinlogo} alt="linkedin" />
+                  <img src={Xinglogo} alt="xing" />
+                </Row>
+                <Row>
+                  <p style={{ color: "#efefef", padding: "12px 0 12px 0" }}>Copyright &copy; 2019 neonerv</p>
+                </Row>
+              </Col>
+              <Col md="2" lg="2" className="px-0 px-md-5">
+                <h6 style={{ color: "#8d8d8d", fontWeight: "bold", paddingBottom: "8px" }}>PRODUCT</h6>
+                <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>neoVision</p>
+                <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>neoVenture</p>
+                <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>neoBoost</p>
+              </Col>
+              <Col md="2" lg="2">
+                <h6 style={{ color: "#8d8d8d", fontWeight: "bold", paddingBottom: "8px"  }}>COMPANY</h6>
+                <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>About us</p>
+                <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>Privacy Policy</p>
+                <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>Terms of use</p>
+              </Col>
+              <Col md="4" lg="4">
+               <h6 style={{ color: "#8d8d8d", fontWeight: "bold", paddingBottom: "8px"  }}>WANT TO KNOW MORE</h6>
+               <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>Get Monthly Updates and sign up for the newsletter</p>
               </Col>
             </Row>
           </Col>

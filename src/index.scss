@@ -133,12 +133,43 @@ $left-space: 3.6%;
   }
 
   .features {
-    background: #e7f1ea;
+    background: #f2f2f2;
     .feature-detail {
       margin: 24px 0;
     }
     img {
       max-width: 100%;
+    }
+  }
+
+  .case-study {
+    background: linear-gradient(215deg, #f2f2f2 50%, #e7f1ea 50%);
+    .content-text {
+      padding: 160px ($left-space * 2) 0 $left-space;
+    }
+  }
+
+  .about-section {
+    margin-left: $left-space;
+    img {
+      width: 40px;
+    }
+  }
+
+  .contact-section {
+    .contact-info {
+      margin-left: $left-space;
+    }
+    background-color: #211f25;
+  }
+  .footer-section {
+    margin-left: $left-space;
+    .contact-logos {
+      img {
+        width: 60px;
+        padding: 12px;
+        margin: 24px 0 24px 0;
+      }
     }
   }
 }

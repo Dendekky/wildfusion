@@ -19,6 +19,8 @@ import AgileCoaching from '../assets/logos/icon__agile-coaching.svg';
 import OperatingModelDesign from '../assets/logos/icon__operating-model-design.svg';
 import ScalablePartnerEcosystem from '../assets/logos/icon__scalable-partner-ecosystem.svg';
 import DevopsTransformation from '../assets/logos/icon__devops-transformation.svg';
+import Linkedinlogo from '../assets/logos/linkedin.svg';
+import Xinglogo from '../assets/logos/xing.svg'
 
 export {
     Headerlogo,
@@ -42,4 +44,6 @@ export {
     OperatingModelDesign,
     ScalablePartnerEcosystem,
     DevopsTransformation,
+    Linkedinlogo,
+    Xinglogo
 }

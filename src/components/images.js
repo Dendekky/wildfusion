@@ -9,6 +9,7 @@ import frischluft from "../assets/images/img__hero-logo-frischluft.png"
 import neovision from "../assets/images/neovery-neovision.png"
 import neoventure from "../assets/images/neovery-neo-venture.png"
 import neoboost from "../assets/images/neovery-neoboost.png"
+import consumergoods from "../assets/images/photo-consumer-goods.png"
 
 export {
     hero1,
@@ -21,5 +22,6 @@ export {
     frischluft,
     neovision,
     neoventure,
-    neoboost
+    neoboost,
+    consumergoods
 }
