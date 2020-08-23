@@ -11,6 +11,10 @@ import {
   Card,
   CardTitle,
   CardBody,
+  InputGroup,
+  InputGroupAddon,
+  InputGroupText,
+  Input,
 } from "reactstrap";
  import {
   hero1,
@@ -498,6 +502,12 @@ function App() {
               <Col md="4" lg="4">
                <h6 style={{ color: "#8d8d8d", fontWeight: "bold", paddingBottom: "8px"  }}>WANT TO KNOW MORE</h6>
                <p style={{ color: "#efefef", padding: "2px 0 2px 0" }}>Get Monthly Updates and sign up for the newsletter</p>
+               <InputGroup>
+                  <Input placeholder="Enter your email address" />
+                  <InputGroupAddon addonType="append">
+                    <InputGroupText style={{ cursor: "pointer"}} className="submit-button" />
+                  </InputGroupAddon>
+                </InputGroup>
               </Col>
             </Row>
           </Col>
